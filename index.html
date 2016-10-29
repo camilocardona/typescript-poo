@@ -5,12 +5,54 @@
 
         <script type="text/javascript" src="src/domain/artista.model.js">
         </script>
+        <script type="text/javascript" src="src/domain/album.model.js">
+        </script>        
         <script type="text/javascript" src="src/app.js">
         </script>
 
     </head>
 
     <body>
-        hola typescript
+        <form>
+            <fieldset>
+                <legend>Datos del album</legend>
+                <label for="album_nombre">Nombre del álbum</label>            
+                <input  type="text" 
+                        name="albumNombre" 
+                        id="album_nombre"/> <br/><br/>
+
+                <label  for="album_fechaLanzamiento">Fecha de lanzamiento</label>            
+                <input  type="text" 
+                        name="albumFechaLanzamiento" 
+                        id="album_fechaLanzamiento"/> <br/><br/>
+                
+                <input  type="button" 
+                        id="btnAdicionarAlbum"
+                        value="Adicionar album"
+                        onclick="app.agregarAlbum()"/>                
+                
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Datos de los artistas</legend>
+                <label  for="artista_nombre">Nombre del artista<label>
+                <input  type="text" 
+                        name="artistaNombre" 
+                        id="artista_nombre"/> <br/>
+
+                <hr/>
+
+                <label  for="artistaEdad">Edad</label>            
+                <input  type="text" name="artistaEdad" 
+                        id="artista_edad"/> <br/><br/>
+                <input  type="button" 
+                        id="btnCrearArtista"
+                        value="Crear artista"
+                        onclick=""/>                
+            </fieldset>
+        </form>
+        
     </body>    
 </html>

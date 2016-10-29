@@ -1,7 +1,7 @@
 class Artista 
 {
     public nombre: string;
-    public edad: number;
+    private edad: number;
 
     constructor() { }
 
